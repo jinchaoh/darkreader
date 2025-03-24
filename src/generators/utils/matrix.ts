@@ -18,7 +18,7 @@ export function createFilterMatrix(config: Theme): matrix5x5 {
         m = multiplyMatrices(m, Matrix.brightness(config.brightness / 100));
     }
     if (config.mode === 1) {
-        m = multiplyMatrices(m, Matrix.invertNHue());
+        m = multiplyMatrices(m, Matrix.greenEyeCare());
     }
     return m;
 }
@@ -46,6 +46,16 @@ export const Matrix = {
             [0.333, -0.667, -0.667, 0, 1],
             [-0.667, 0.333, -0.667, 0, 1],
             [-0.667, -0.667, 0.333, 0, 1],
+            [0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 1],
+        ];
+    },
+    
+    greenEyeCare(): matrix5x5 {
+        return [
+            [0.8, 0.2, 0.0, 0, 0],
+            [0.1, 0.9, 0.0, 0, 0],
+            [0.1, 0.2, 0.7, 0, 0],
             [0, 0, 0, 1, 0],
             [0, 0, 0, 0, 1],
         ];

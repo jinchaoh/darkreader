@@ -12,7 +12,7 @@ import {NewsGroup, NewsButton} from './news';
 import {MobileLinks, MobileLinksButton} from './news/mobile-links';
 import SiteListSettings from './site-list-settings';
 import {getDuration} from '../../../utils/time';
-import {DONATE_URL, HOMEPAGE_URL, MOBILE_URL, getHelpURL} from '../../../utils/links';
+import {MOBILE_URL, getHelpURL} from '../../../utils/links';
 import {getLocalMessage} from '../../../utils/locales';
 import {compose} from '../../utils';
 import {PlusBody} from '@plus/popup/plus-body'; // eslint-disable-line
@@ -134,6 +134,7 @@ function Body(props: BodyProps & {fonts: string[]} & {installation: {date: numbe
         }
     }
 
+    /* 暂时注释掉生日庆祝相关代码
     const birthdayMessage = getLocalMessage('we_celebrate_10_years');
     let birthdayMessageSpec = <span>{birthdayMessage}</span>;
     try {
@@ -153,8 +154,10 @@ function Body(props: BodyProps & {fonts: string[]} & {installation: {date: numbe
     } catch (err) {
         console.error(err);
     }
+    */
 
     const filterTab = <FilterSettings data={props.data} actions={props.actions}>
+        {/* 暂时注释掉生日庆祝和捐赠链接部分
         <div class="birthday-container">
             <i class="birthday-icon">🎉</i>
             <span class="birthday-message">
@@ -164,6 +167,7 @@ function Body(props: BodyProps & {fonts: string[]} & {installation: {date: numbe
                 <span class="donate-link__text">{getLocalMessage('pay_for_using')}</span>
             </a>
         </div>
+        */}
     </FilterSettings>;
 
     const moreTab = <MoreSettings data={props.data} actions={props.actions} fonts={props.fonts} />;

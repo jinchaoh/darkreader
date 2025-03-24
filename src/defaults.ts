@@ -8,21 +8,21 @@ declare const __CHROMIUM_MV3__: boolean;
 
 export const DEFAULT_COLORS = {
     darkScheme: {
-        background: '#181a1b',
-        text: '#e8e6e3',
+        background: '#e8f5e9',
+        text: '#1b5e20',
     },
     lightScheme: {
-        background: '#dcdad7',
-        text: '#181a1b',
+        background: '#f1f8e9',
+        text: '#33691e',
     },
 };
 
 export const DEFAULT_THEME: Theme = {
     mode: 1,
     brightness: 100,
-    contrast: 100,
+    contrast: 95,
     grayscale: 0,
-    sepia: 0,
+    sepia: 15,
     useFont: false,
     fontFamily: isMacOS ? 'Helvetica Neue' : isWindows ? 'Segoe UI' : 'Open Sans',
     textStroke: 0,
