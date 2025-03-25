@@ -16,7 +16,7 @@ export function MobileLinks({expanded, onLinkClick, onClose}: MobileLinksProps) 
             <div class="news__header">
                 <span class="news__header__text">
                     <span class="news__header__text__dark-reader">
-                        Dark Reader
+                        Green Reader
                     </span>
                     {' '}
                     <span class="news__header__text__mobile">

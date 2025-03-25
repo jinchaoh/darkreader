@@ -23,7 +23,7 @@ function Logo() {
             target="_blank"
             rel="noopener noreferrer"
         >
-            Dark Reader
+            Green Reader
         </a>
     );
 }

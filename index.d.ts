@@ -154,7 +154,7 @@ declare namespace DarkReader {
         /**
          * A toggle to disable the proxying of `document.styleSheets`.
          * This is a API-Exclusive option, as it can break legitimate websites,
-         * who are using the Dark Reader API.
+         * who are using the  API.
          */
         disableStyleSheetsProxy: boolean;
     }
